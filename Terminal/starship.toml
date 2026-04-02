@@ -1,0 +1,39 @@
+# Linha de comando extravagante
+add_newline = true
+
+# Símbolo à esquerda, substituindo a bateria
+format = "⚡ $directory $git_branch $git_status $cmd_duration$line_break$character"
+
+# Diretório atual com ícone de pasta
+[directory]
+truncation_length = 3
+style = "bold magenta"
+read_only = " 🔒 "
+format = "📂 [$path]($style) "
+
+# Branch Git
+[git_branch]
+symbol = "🌱 "
+style = "bold green"
+
+# Status Git (adiciona ícones para modificado, adicionado etc.)
+[git_status]
+conflicted = "☠️ "
+ahead = "⬆️ "
+behind = "⬇️ "
+staged = "✓ "
+modified = "✏️ "
+untracked = "❓ "
+renamed = "➜ "
+deleted = "🗑 "
+style = "bold yellow"
+
+# Tempo de execução de comandos longos
+[cmd_duration]
+min_time = 500
+format = "⏱ [$duration](bold cyan) "
+
+# Caracter de prompt
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"
