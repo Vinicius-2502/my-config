@@ -1,0 +1,8 @@
+[user]
+	name = Vinicius da silva Nascimento
+	email = vinicius.nascimento.250209@gmail.com
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

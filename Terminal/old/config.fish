@@ -7,9 +7,9 @@ source ~/.oh-my-fish/themes/emoji-powerline/fish_right_prompt.fish
 source ~/.oh-my-fish/themes/emoji-powerline/fish_prompt.fish
 source ~/.oh-my-fish/themes/emoji-powerline/fish_right_prompt.fish
 
-# Executa o Neofetch automaticamente
-if type -q neofetch
-    neofetch
+# Executa o Fastfetch automaticamente
+if type -q fastfetch
+    fastfetch
 end
 
 fish_add_path /home/vini/.spicetify

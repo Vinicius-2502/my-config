@@ -1,0 +1,96 @@
+# Kali-style prompt (duas linhas) com mais info, paleta violeta/ciano (sem vermelho)
+"$schema" = 'https://starship.rs/config.schema.json'
+
+scan_timeout = 2000
+
+format = '[┌── 🧙 \($username$hostname\)-\[$directory\]](bold #8E7CFF)$os$time$jobs$git_branch$git_status$docker_context$nodejs$python$rust$cmd_duration$line_break[└─](bold #8E7CFF) $character'
+
+[character]
+success_symbol = "[❯](bold #8E7CFF)"
+error_symbol = "[❯](bold #FFD166)"
+vimcmd_symbol = "[❮](bold #FFD166)"
+
+[username]
+show_always = true
+style_user = "bold #7DF9FF"
+style_root = "bold #FFD166"
+format = "[$user]($style)"
+
+[hostname]
+ssh_only = false
+style = "bold #B388FF"
+format = "[@$hostname]($style)"
+
+[directory]
+style = "bold #E0AAFF"
+format = "[📁 $path]($style)"
+truncation_length = 4
+truncation_symbol = "…/"
+
+[git_branch]
+symbol = "🌿 "
+style = "bold #80FFEA"
+format = " [$symbol$branch]($style)"
+
+[git_status]
+style = "bold #FFD166"
+format = " ($all_status)"
+conflicted = "⚔️"
+ahead = "⇡${count}"
+behind = "⇣${count}"
+diverged = "⇕⇡${ahead_count}⇣${behind_count}"
+up_to_date = ""
+untracked = "❔${count}"
+stashed = "📦${count}"
+modified = "✏️ ${count}"
+staged = "➕${count}"
+renamed = "💡${count}"
+deleted = "🗑️ ${count}"
+
+[cmd_duration]
+style = "bold #FFD166"
+format = " ⏱ $duration"
+min_time = 2000
+
+[nodejs]
+symbol = "📦 "
+style = "bold #7DF9FF"
+format = " [via $symbol($version)]($style)"
+
+[python]
+symbol = "🐍 "
+style = "bold #B388FF"
+format = " [$symbol($version)]($style)"
+
+[docker_context]
+symbol = "🐳 "
+style = "bold #7DF9FF"
+format = " [via $symbol$context]($style)"
+
+[rust]
+symbol = "🦀 "
+style = "bold #E0AAFF"
+format = " [$symbol($version)]($style)"
+
+[os]
+disabled = false
+style = "bold #7DF9FF"
+format = " [$symbol$name]($style)"
+
+[time]
+disabled = false
+style = "bold #B388FF"
+format = " [🕐 $time]($style)"
+time_format = "%H:%M:%S"
+
+[jobs]
+disabled = false
+symbol = "⚙️ "
+style = "bold #FFD166"
+format = " [$symbol$jobs]($style)"
+
+[status]
+style = "bold #FFD166"
+symbol = "💥 "
+format = "[$symbol$status]($style)"
+disabled = false

@@ -1,19 +1,17 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "model": "opencode/minimax-m2.5-free",
+  "model": "nvidia/nvidia/nemotron-3-super-120b-a12b",
   "provider": {
-    "opencode": {
-      "npm": "@ai-sdk/openai-compatible",
-      "name": "OpenCode (MiniMax Free)",
-      "options": {
-      "baseURL": "https://opencode.ai/zen/v1"
-      }
+    "nvidia": {
+      "whitelist": [
+        "nvidia/nemotron-3-super-120b-a12b"
+      ]
     }
   },
   "mcp": {
     "pencil": {
       "command": [
-        "/tmp/.mount_pencilujP2xY/resources/app.asar.unpacked/out/mcp-server-linux-x64",
+        "/tmp/.mount_pencilujP2x/resources/app.asar.unpacked/out/mcp-server-linux-x64",
         "--app",
         "desktop"
       ],
