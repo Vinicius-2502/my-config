@@ -4,8 +4,11 @@ Ele está organizado para facilitar a restauração em caso de troca de computad
 Estrutura:
 - OpenCode/: Configurações e habilidades personalizadas do OpenCode
 - Terminal/: Configurações de terminal (shell, prompt, etc.)
-  - antiga/: Configuração do terminal anterior (usando emoji-powerline diretamente)
-  - nova/: Configuração atual do terminal (Usando Starship com tema Kali Linux e emojis)
+   - old/: Configuração do terminal anterior (usando emoji-powerline diretamente)
+   - new/: Configuração atual do terminal (Usando Starship com tema Kali Linux e emojis)
+   - tilix/: Configurações do terminal Tilix (mantidas, se existirem)
+   - kitty/: Configurações do terminal Kitty (nova)
+- Fastfetch/: Configurações do Fastfetch (nova pasta dedicada)
 - Outros diretórios podem ser adicionados conforme necessário.
 
 Cada subdiretório contém os arquivos de configuração necessários para restaurar o estado

@@ -1,0 +1,349 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "logo": {
+    "type": "kitty",
+    "source": "/home/vini/.config/fastfetch/images/lycanroc_Midnight.png",
+
+    "color": {
+      "1": "blue",
+      "2": "white",
+      "3": "",
+      "4": "",
+      "5": "",
+      "6": "",
+      "7": "",
+      "8": "",
+      "9": "",
+    },
+    "width": 40,
+    "height": 25,
+
+    "padding": {
+      "top": 0,
+      "left": 0,
+      "bottom": 0,
+      "right": 4,
+    },
+
+    "printRemaining": true,
+    "preserveAspectRatio": true,
+    "recache": false,
+    "position": "left",
+
+    "chafa": {
+      "fgOnly": false,
+      "symbols": "block+border+space-wide-inverted",
+    },
+  },
+  "display": {
+    "stat": false,
+    "pipe": false,
+    "showErrors": false,
+    "disableLinewrap": false,
+    "hideCursor": false,
+    "separator": "",
+    // "separator": "        ",
+    "color": {
+      "keys": "",
+      "title": "blue",
+      "output": "",
+      "separator": "",
+    },
+    "brightColor": true,
+    "duration": {
+      "abbreviation": false,
+      "spaceBeforeUnit": "default",
+    },
+    "size": {
+      "maxPrefix": "YB",
+      "binaryPrefix": "iec",
+      "ndigits": 2,
+      "spaceBeforeUnit": "default",
+    },
+    "temp": {
+      "unit": "D",
+      "ndigits": 1,
+      "color": {
+        "green": "32",
+        "yellow": "93",
+        "red": "91",
+      },
+      "spaceBeforeUnit": "default",
+    },
+    "percent": {
+      "type": ["num", "num-color"],
+      "ndigits": 0,
+      "color": {
+        "green": "32",
+        "yellow": "93",
+        "red": "91",
+      },
+      "spaceBeforeUnit": "default",
+      "width": 0,
+    },
+    "bar": {
+      "char": {
+        "elapsed": "■",
+        "total": "-",
+      },
+      "border": {
+        "left": "[ ",
+        "right": " ]",
+        "leftElapsed": "",
+        "rightElapsed": "",
+      },
+      "color": {
+        "elapsed": "auto",
+        "total": "97",
+        "border": "97",
+      },
+      "width": 10,
+    },
+    "fraction": {
+      "ndigits": 2,
+      "trailingZeros": "default",
+    },
+    "noBuffer": false,
+    "key": {
+      "width": 20,
+      "type": "both",
+      "paddingLeft": 0,
+    },
+    "freq": {
+      "ndigits": 2,
+      "spaceBeforeUnit": "default",
+    },
+    "constants": [],
+  },
+  "general": {
+    "thread": true,
+    "processingTimeout": 5000,
+    "detectVersion": true,
+    "playerName": "",
+    "dsForceDrm": false,
+  },
+  "modules": [
+    // TITLE
+    {
+      "type": "title",
+      "key": " ",
+      "keyIcon": "",
+      "format": "{user-name-colored}@{host-name-colored}💻",
+      "fqdn": false,
+      "color": {
+        "user": "cyan",
+        "at": "",
+        "host": "cyan",
+      },
+    },
+
+    {
+      "type": "custom",
+      "format": "╭────────────────────────────────────────────────────────────────────────╮",
+      "outputColor": "cyan",
+    },
+
+    // SYSTEM
+    {
+      "type": "custom",
+      "format": "│                                 SYSTEM                                 │",
+      "outputColor": "cyan",
+    },
+
+    {
+      "type": "os",
+      "keyIcon": "│ ",
+      "keyColor": "cyan",
+      "format": "{pretty-name<54}{#cyan}│",
+    },
+
+    {
+      "type": "host",
+      "keyIcon": "│ 󰌢",
+      "keyColor": "cyan",
+      "format": "{name<54}{#cyan}│",
+    },
+
+    {
+      "type": "kernel",
+      "keyIcon": "│ ",
+      "keyColor": "cyan",
+      "format": "{sysname} {arch<48}{#cyan}│",
+    },
+
+    {
+      "type": "bios",
+      "keyIcon": "│ 󰌢",
+      "keyColor": "cyan",
+      "format": "{version} {type<47}{#cyan}│",
+    },
+
+    {
+      "type": "custom",
+      "format": "├────────────────────────────────────────────────────────────────────────┤",
+      "outputColor": "yellow",
+    },
+
+    //ENVIRONMENT
+    {
+      "type": "custom",
+      "format": "│                              ENVIRONMENT                               │",
+      "outputColor": "yellow",
+    },
+
+    {
+      "type": "sound",
+      "keyIcon": "│ 󰌢",
+      "keyColor": "yellow",
+      "format": "{name} -> {volume-percentage<19}{#yellow}│",
+    },
+
+    {
+      "type": "packages",
+      "keyIcon": "│ 󰏖",
+      "keyColor": "yellow",
+      "format": "{dpkg} (dpkg), {flatpak-all} (flatpak-user)                        {#yellow}│",
+      "disabled": ["winget"],
+      "combined": false,
+    },
+
+    {
+      "type": "shell",
+      "keyIcon": "│ ",
+      "keyColor": "yellow",
+      "format": "{exe-name} {version<49}{#yellow}│",
+    },
+
+    {
+      "type": "de",
+      "keyIcon": "│ ",
+      "keyColor": "yellow",
+      "format": "{pretty-name} {version<47}{#yellow}│",
+    },
+
+    {
+      "type": "terminal",
+      "keyIcon": "│ ",
+      "keyColor": "yellow",
+      "format": "{pretty-name<54}{#yellow}│",
+    },
+
+    {
+      "type": "custom",
+      "format": "├────────────────────────────────────────────────────────────────────────┤",
+      "outputColor": "green",
+    },
+
+    // HARDWARE
+
+    {
+      "type": "custom",
+      "format": "│                                HARDWARE                                │",
+      "outputColor": "green",
+    },
+
+    {
+      "type": "cpu",
+      "keyIcon": "│ ",
+      "keyColor": "green",
+      "format": "{name<54}{#green}│",
+      "temp": false,
+      "showPeCoreCount": true,
+      "tempSensor": "",
+    },
+
+    // MEMORY (DESABILITADO POR BUG COM COMPUTADORES COM MAIS DE UMA PLACA DE VIDEO)
+    // {
+    //   "type": "gpu",
+    //   "keyIcon": "│ 󰾲",
+    //   "keyColor": "green",
+    //   "format": "{vendor} {name} -> {type<30}{#green}│",
+    //   "driverSpecific": false,
+    //   "detectionMethod": "pci",
+    //   "temp": false,
+    //   "hideType": "none",
+    //   "percent": {
+    //     "green": 50,
+    //     "yellow": 80,
+    //     "type": 0,
+    //   },
+    // },
+
+    {
+      "type": "memory",
+      "keyIcon": "│ ",
+      "keyColor": "green",
+      "format": "{used} / {total} -> {percentage<31}{#green}│",
+      "percent": {
+        "green": 50,
+        "yellow": 80,
+        "type": 0,
+      },
+    },
+
+    // {
+    //   "type": "swap",
+    //   "keyIcon": "│ 󰓡",
+    //   "keyColor": "green",
+    //   "format": "{used} / {total} -> {percentage<30}{#green}│",
+    //   "separate": false,
+    //   "percent": {
+    //     "green": 50,
+    //     "yellow": 80,
+    //     "type": 0,
+    //   },
+    // },
+
+    {
+      "type": "disk",
+      "keyIcon": "│ ",
+      "keyColor": "green",
+      "format": "{size-used} / {size-total} -> {size-percentage} {filesystem<23}{#green}│",
+      "showRegular": true,
+      "showExternal": true,
+      "showHidden": false,
+      "showSubvolumes": false,
+      "showReadOnly": true,
+      "showUnknown": false,
+      "folders": "",
+      "hideFolders": "/efi:/boot:/boot/*",
+      "hideFS": "",
+      "useAvailable": false,
+      "percent": {
+        "green": 50,
+        "yellow": 80,
+        "type": 0,
+      },
+    },
+    {
+      "type": "custom",
+      "format": "├────────────────────────────────────────────────────────────────────────┤",
+      "outputColor": "magenta",
+    },
+
+    // COLORS
+
+    {
+      "type": "custom",
+      "format": "│                                 COLORS                                 │",
+      "outputColor": "magenta",
+    },
+
+    {
+      "type": "custom",
+      "format": "{#magenta}│{#}  colors         {#black}★{#} {#red}★{#} {#green}★{#} {#yellow}★{#} {#blue}★{#} {#magenta}★{#} {#cyan}★{#} {#white}★{#} {#bright_black}★{#} {#bright_red}★{#} {#bright_green}★{#} {#bright_yellow}★{#} {#bright_blue}★{#} {#bright_magenta}★{#} {#bright_cyan}★{#} {#bright_white}★{#}                       {#magenta}│{#}",
+    },
+
+    {
+      "type": "custom",
+      "format": "│                                                                        │",
+      "outputColor": "magenta",
+    },
+
+    {
+      "type": "custom",
+      "format": "╰────────────────────────────────────────────────────────────────────────╯",
+      "outputColor": "magenta",
+    },
+  ],
+}
