@@ -1,0 +1,17 @@
+{
+  "CtrlS": "Save",
+  "CtrlZ": "Undo",
+  "CtrlY": "Redo",
+  "CtrlX": "Cut",
+  "CtrlC": "Copy",
+  "CtrlV": "Paste",
+  "CtrlA": "SelectAll",
+  "CtrlF": "Find",
+  "F1": "ToggleHelp",
+  "Left": "CursorLeft",
+  "Right": "CursorRight",
+  "Up": "CursorUp",
+  "Down": "CursorDown",
+  "Alt-/": "lua:comment.comment",
+  "CtrlUnderscore": "lua:comment.comment"
+}

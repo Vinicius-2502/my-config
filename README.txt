@@ -3,6 +3,7 @@ Ele está organizado para facilitar a restauração em caso de troca de computad
 
 Estrutura:
 - OpenCode/: Configurações e habilidades personalizadas do OpenCode
+    - Inclui MCP Context7 para documentação atualizada
 - Terminal/: Configurações de terminal (shell, prompt, etc.)
    - old/: Configuração do terminal anterior (usando emoji-powerline diretamente)
    - new/: Configuração atual do terminal (Usando Starship com tema Kali Linux e emojis)

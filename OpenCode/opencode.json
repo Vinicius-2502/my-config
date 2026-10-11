@@ -9,11 +9,11 @@
     }
   },
   "mcp": {
-    "pencil": {
+    "context7": {
       "command": [
-        "/tmp/.mount_pencilujP2x/resources/app.asar.unpacked/out/mcp-server-linux-x64",
-        "--app",
-        "desktop"
+        "npx",
+        "-y",
+        "@upstash/context7-mcp"
       ],
       "enabled": true,
       "type": "local"

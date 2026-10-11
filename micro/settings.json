@@ -1,0 +1,10 @@
+{
+    "autosave": 1000,
+    "backup": false,
+    "colorscheme": "one-dark",
+    "ruler": false,
+    "statusformatl": "$(filename) $(modified)",
+    "statusformatr": "line $(line) col $(col) | $(opt:filetype)",
+    "tabsize": 2,
+    "tabstospaces": true
+}

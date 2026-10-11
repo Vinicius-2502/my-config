@@ -1,0 +1,9 @@
+{
+  "command": [
+    "npx",
+    "-y",
+    "@upstash/context7-mcp"
+  ],
+  "enabled": true,
+  "type": "local"
+}
